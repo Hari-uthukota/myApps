@@ -1,0 +1,26 @@
+<div class="player-wrapper mt-3" [ngStyle]="{'background-image': 'url(' + currentlyPlaying.albumArt + ')', 'background-repeat':'no-repeat'}">
+  <div class="song-info">
+    <marquee behavior="" direction="" class="text-white">{{currentlyPlaying.songName}}  by {{currentlyPlaying.artist}}</marquee>
+  </div>
+
+  <div class="music-btns text-center">
+    <!-- <img src="{{currentlyPlaying.albumArt}}" alt=""> -->
+    <ul>
+      <li (click)="repeat()"><i class="fas fa-redo-alt " [ngClass]="repeatPlay?'active':''"></i></li>
+      <li (click)="backward()"><i class="fas fa-backward"></i></li>
+      <li (click)="playNpause()">
+        <i class="fas fa-play"><i class="fas fa-pause"></i></i>
+      </li>
+      <li (click)="forward()"><i class="fas fa-forward"></i></li>
+      <li (click)="shuffle()"><i class="fas fa-random " [ngClass]="shufflePlay?'active':''"></i></li>
+    </ul>
+  </div>
+
+ 
+</div>
+
+<ul class="list-group mt-3">
+  <li class="list-group-item" *ngFor="let track of songsQueue; let i = index">
+    {{i+1}}. {{track.songName}}
+  </li>
+</ul>

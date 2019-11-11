@@ -1,0 +1,16 @@
+<div class="container" [hidden]="hideLogin">
+  <div class="login-wrap">
+    <div class="login-box">
+      <div class="login-logo">
+        <i class="fas fa-fingerprint"></i>
+      </div>
+      <div class="login-form">
+        <form action="" class=" text-center" (ngSubmit)="onSubmit()" #loginForm="ngForm">
+          <span> <input type="text"></span>
+          <span> <input type="password" name="" id=""></span>
+          <button routerLink="/home" type="submit" class="btn btn-light">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

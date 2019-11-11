@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body{
+  min-height: 87vh;
+}
+
+ul.nav {
+  color: #fff;
+  background-color: #009688;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+ul.contact>li {
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.contact>li::before,
+.login-form span::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+  color: #009688;
+}
+
+.contact>li:nth-child(1)::before {
+  content: "\f879";
+}
+
+.contact>li:nth-child(2)::before {
+  content: "\f05a";
+}
+
+.contact>li:nth-child(3)::before {
+  content: "\f1cd";
+}
+
+.contact>li:nth-child(4)::before {
+  content: "\f011";
+
+}
+
+
+
+/* Login page  */
+
+.login-wrap {
+  min-width: 450px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 310px;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #cfcfcf;
+  overflow: hidden;
+}
+
+.login-logo {
+  width: 100%;
+  height: 50%;
+  background: #009688;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-logo i {
+  font-size: 100px;
+  color: #fff;
+}
+
+.login-form {
+  height: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form span {
+  border-bottom: 1px solid #222;
+  display: block;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.login-form form span:first-child::before {
+  content: "\f2bd";
+  font-size: 25px;
+
+}
+
+.login-form form span:nth-child(2)::before {
+  content: "\f023";
+  font-size: 25px;
+
+}
+
+.login-form input {
+  border: none;
+}
+
+.login-form button:hover {
+  background: #009432;
+  color: #fff;
+}
+
+
+/* music player  */
+
+.player-wrapper {
+  border-radius: 5px;
+  background: #f1f3f6;
+  box-shadow: 0px 0px 3px 0px #cfcfcf;
+  background-position: center center; 
+}
+
+.music-btns ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  min-height: 100px;
+  padding-bottom: 10px;
+
+}
+
+.music-btns ul li {
+  cursor: pointer;
+  color:#fff;
+}
+.music-btns ul li:hover{
+  color: black;
+}
+.music-btns .active {
+  color:
+    #fff;
+  background:
+    #000;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+
+.appNav a{
+  color:#666;
+}
+
+.appNav a.active{
+  color:#007bff;
+}

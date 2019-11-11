@@ -1,0 +1,18 @@
+  <!-- Searching song -->
+  
+  <form action="" class="mt-3 text-center">
+    <div class="form-group">
+      <input type="search" class="form-control" placeholder="Enter search string" #search name="" id="">
+    </div> 
+    <button class="btn btn-primary my-1 " (click)="doSearch(search.value)">Search</button>
+  </form>
+  <div *ngIf="itunes.loading" class="text-center">
+    <p class="lead">Loading...</p>
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let track of itunes.results[0].results">
+      <img src="{{track.artworkUrl30}}" alt="" class="image-fluid">
+      <a href="{{track.artistViewUrl}}">{{track.trackName}}</a> </li>
+    </ul>
+    
+    <!-- searching songs end -->
